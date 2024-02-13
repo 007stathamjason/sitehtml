@@ -8,7 +8,7 @@
 {
     width: 1400px;
     margin: 20px auto;
-    columns: 4;
+    columns: 5;
     column-gap: 20px;
 }
 .container .box
@@ -27,10 +27,26 @@
     .container
     {
         width: calc(100% - 40px);
+        columns: 5;
+    }
+}
+@media (max-width: 800px)
+{
+    .container
+    {
+        width: calc(100% - 40px);
+        columns: 4;
+    }
+}
+@media (max-width: 640px)
+{
+    .container
+    {
+        width: calc(100% - 40px);
         columns: 3;
     }
 }
-@media (max-width: 768px)
+@media (max-width: 480px)
 {
     .container
     {
@@ -38,7 +54,7 @@
         columns: 2;
     }
 }
-@media (max-width: 480px)
+@media (max-width: 320px)
 {
     .container
     {
